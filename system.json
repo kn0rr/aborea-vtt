@@ -49,6 +49,6 @@
   "gridDistance": 1,
   "gridUnits": "m",
   "template": "template.json",
-  "manifest": "https://raw.githubusercontent.com/kn0rr/aborea-vtt/main/system.json",
-  "download": "https://github.com/kn0rr/aborea-vtt/archive/refs/tags/v1.zip"
+  "manifest": "https://github.com/kn0rr/aborea-vtt/releases/latest/download/system.json",
+  "download": "https://github.com/kn0rr/aborea-vtt/releases/latest/download/aborea-lite.zip"
 }
