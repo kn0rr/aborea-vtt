@@ -50,5 +50,5 @@
   "gridUnits": "m",
   "template": "template.json",
   "manifest": "https://github.com/kn0rr/aborea-vtt/releases/latest/download/system.json",
-  "download": "https://github.com/kn0rr/aborea-vtt/releases/latest/download/aborea-lite.zip"
+  "download": "https://github.com/kn0rr/aborea-vtt/releases/download/v1/aborea-vtt-master.zip"
 }
