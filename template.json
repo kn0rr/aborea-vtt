@@ -1,0 +1,75 @@
+{
+  "Actor": {
+    "character": {
+      "attributes": {
+        "str": { "value": 5 },
+        "dex": { "value": 5 },
+        "con": { "value": 5 },
+        "int": { "value": 5 },
+        "wis": { "value": 5 },
+        "cha": { "value": 5 }
+      },
+      "resources": {
+        "lep": { "value": 20, "max": 20 },
+        "aep": { "value": 10, "max": 10 }
+      },
+      "combat": {
+        "attack": 0,
+        "defense": 0,
+        "armor": 0,
+        "initiative": 0
+      },
+      "details": {
+        "level": 1,
+        "species": "",
+        "class": "",
+        "background": ""
+      },
+      "notes": ""
+    },
+    "npc": {
+      "attributes": {
+        "str": { "value": 4 },
+        "dex": { "value": 4 },
+        "con": { "value": 4 },
+        "int": { "value": 4 },
+        "wis": { "value": 4 },
+        "cha": { "value": 4 }
+      },
+      "resources": {
+        "lep": { "value": 10, "max": 10 },
+        "aep": { "value": 0, "max": 0 }
+      },
+      "combat": {
+        "attack": 0,
+        "defense": 0,
+        "armor": 0,
+        "initiative": 0
+      },
+      "details": {
+        "level": 1,
+        "species": "",
+        "class": "",
+        "background": ""
+      },
+      "notes": ""
+    }
+  },
+  "Item": {
+    "talent": {
+      "rank": 0,
+      "linkedAttribute": "int",
+      "description": ""
+    },
+    "weapon": {
+      "damage": "1d6",
+      "attackBonus": 0,
+      "linkedAttribute": "str",
+      "description": ""
+    },
+    "gear": {
+      "quantity": 1,
+      "description": ""
+    }
+  }
+}

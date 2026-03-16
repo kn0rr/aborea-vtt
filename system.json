@@ -1,0 +1,52 @@
+{
+  "id": "aborea-lite",
+  "title": "Aborea Lite",
+  "description": "Kleines Foundry VTT System-Template für Aborea-inspirierte Hausrunden.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "OpenAI"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    }
+  ],
+  "esmodules": [
+    "module/aborea-lite.mjs"
+  ],
+  "styles": [
+    "styles/system.css"
+  ],
+  "primaryTokenAttribute": "resources.lep.value",
+  "secondaryTokenAttribute": "resources.aep.value",
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "npc": {
+        "htmlFields": [
+          "notes"
+        ]
+      }
+    },
+    "Item": {
+      "talent": {},
+      "weapon": {},
+      "gear": {}
+    }
+  },
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "template": "template.json"
+}

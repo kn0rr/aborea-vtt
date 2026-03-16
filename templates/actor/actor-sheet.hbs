@@ -1,0 +1,119 @@
+<form class="aborea sheet {{cssClass}}" autocomplete="off">
+  <section class="header card">
+    <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    <label>
+      Name
+      <input type="text" name="name" value="{{actor.name}}" />
+    </label>
+    <div class="grid-2">
+      <label>
+        {{localize "ABOREA.Level"}}
+        <input type="number" name="system.details.level" value="{{system.details.level}}" />
+      </label>
+      <label>
+        Typ
+        <input type="text" value="{{actor.type}}" disabled />
+      </label>
+      <label>
+        {{localize "ABOREA.Species"}}
+        <input type="text" name="system.details.species" value="{{system.details.species}}" />
+      </label>
+      <label>
+        {{localize "ABOREA.Class"}}
+        <input type="text" name="system.details.class" value="{{system.details.class}}" />
+      </label>
+    </div>
+  </section>
+
+  <section class="grid-2">
+    <div class="card">
+      <h3>{{localize "ABOREA.Attributes"}}</h3>
+      {{#each system.attributes as |attr key|}}
+        <div class="attribute-row">
+          <label>
+            {{key}}
+            <input type="number" name="system.attributes.{{key}}.value" value="{{attr.value}}" />
+          </label>
+          <button type="button" class="roll-attribute" data-attribute="{{key}}">{{localize "ABOREA.RollAttribute"}}</button>
+          <span class="muted">W10!</span>
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="card">
+      <h3>{{localize "ABOREA.Resources"}}</h3>
+      <div class="grid-2">
+        <label>
+          LEP
+          <input type="number" name="system.resources.lep.value" value="{{system.resources.lep.value}}" />
+        </label>
+        <label>
+          LEP Max
+          <input type="number" name="system.resources.lep.max" value="{{system.resources.lep.max}}" />
+        </label>
+        <label>
+          AEP
+          <input type="number" name="system.resources.aep.value" value="{{system.resources.aep.value}}" />
+        </label>
+        <label>
+          AEP Max
+          <input type="number" name="system.resources.aep.max" value="{{system.resources.aep.max}}" />
+        </label>
+      </div>
+      <h3>{{localize "ABOREA.Combat"}}</h3>
+      <div class="grid-2">
+        <label>
+          {{localize "ABOREA.Attack"}}
+          <input type="number" name="system.combat.attack" value="{{system.combat.attack}}" />
+        </label>
+        <label>
+          {{localize "ABOREA.Defense"}}
+          <input type="number" name="system.combat.defense" value="{{system.combat.defense}}" />
+        </label>
+        <label>
+          {{localize "ABOREA.Armor"}}
+          <input type="number" name="system.combat.armor" value="{{system.combat.armor}}" />
+        </label>
+        <label>
+          {{localize "ABOREA.Initiative"}}
+          <input type="number" name="system.combat.initiative" value="{{system.combat.initiative}}" />
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid-2">
+    <div class="card">
+      <h3>{{localize "ABOREA.Talents"}}</h3>
+      {{#each talents as |item|}}
+        <div class="item-row">
+          <div>
+            <strong>{{item.name}}</strong>
+            <div class="muted">{{item.system.linkedAttribute}} • Rang {{item.system.rank}}</div>
+          </div>
+          <button type="button" class="roll-talent" data-item-id="{{item.id}}">{{localize "ABOREA.RollTalent"}}</button>
+          <a class="item-edit" data-item-id="{{item.id}}"><i class="fas fa-pen"></i></a>
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="card">
+      <h3>{{localize "ABOREA.Items"}}</h3>
+      {{#each items as |item|}}
+        <div class="item-row">
+          <div>
+            <strong>{{item.name}}</strong>
+            <div class="muted">{{item.type}}</div>
+          </div>
+          <a class="item-edit" data-item-id="{{item.id}}"><i class="fas fa-pen"></i></a>
+          <a class="item-delete" data-item-id="{{item.id}}"><i class="fas fa-trash"></i></a>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>{{localize "ABOREA.Notes"}}</h3>
+    <textarea name="system.notes" rows="8">{{system.notes}}</textarea>
+  </section>
+</form>

@@ -1,0 +1,35 @@
+{
+  "ABOREA": {
+    "SheetTitle": "Aborea Lite",
+    "RollAttribute": "Attribut würfeln",
+    "RollTalent": "Talent würfeln",
+    "ExplodingD10": "explodierender W10",
+    "Attributes": "Attribute",
+    "Resources": "Ressourcen",
+    "Combat": "Kampf",
+    "Notes": "Notizen",
+    "Items": "Gegenstände",
+    "Talents": "Talente",
+    "Weapons": "Waffen",
+    "Gear": "Ausrüstung",
+    "Level": "Stufe",
+    "Species": "Volk",
+    "Class": "Klasse",
+    "Background": "Hintergrund",
+    "Attack": "Angriff",
+    "Defense": "Abwehr",
+    "Armor": "Rüstung",
+    "Initiative": "Initiative"
+  },
+  "TYPES": {
+    "Actor": {
+      "character": "Charakter",
+      "npc": "NSC"
+    },
+    "Item": {
+      "talent": "Talent",
+      "weapon": "Waffe",
+      "gear": "Ausrüstung"
+    }
+  }
+}
